@@ -76,7 +76,7 @@
 
 
         </section>
-<!--        <script src="../js/sesion.js" type="text/javascript"></script>-->
+
             <script src="../js/global.js" type="text/javascript"></script>
          <script src="../js/cargarDatos.js" type="text/javascript"></script>
          <script src="../js/manejarSesion.js" type="text/javascript"></script>

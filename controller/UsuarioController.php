@@ -69,6 +69,8 @@ class UsuarioController {
 
     public function logout() {
         SessionManager::cerrarSesion();
+        $response["error"]= false;
+       return json_encode($response);
     }
 
     public function register() {

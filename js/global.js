@@ -36,8 +36,11 @@ function onceLoaded() {
  * @param {type} opt_cancel_function Función a ejecutar si el usuario ha hecho clic en el botón de cancelar. Se deberá ejecutar después de cerrar el diálogo.  Si no se aporta una función, simplemente se cerrará el diálogo.
  
  */
-function showModal(modal_id, title, msg, opt_ok_text = null,
-        opt_cancel_text = null, opt_ok_function = null, opt_cancel_function = null) {
+function showModal(modal_id, title, msg, 
+opt_ok_text = null,
+        opt_cancel_text = null,
+        opt_ok_function = null,
+        opt_cancel_function = null) {
 
 //creo unos flags para indicar qué ha decidido el usuario
     let ok_clicked = false;
@@ -87,8 +90,9 @@ function showModal(modal_id, title, msg, opt_ok_text = null,
         ok_clicked = false;
         cancel_clicked = false;
     }, {once: true});
-    //Con once:true nos aseguramos de que solo se ejecute una vez y que justo después se quite el manejador de enventos
-    //https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListene
+    //Con once:true 
+    //nos aseguramos de que solo se ejecute una vez y que justo después se quite el manejador de enventos
+    //https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 
 
     optok_el.onclick = function () {

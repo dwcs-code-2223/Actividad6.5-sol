@@ -103,8 +103,8 @@ function loginJSON(event) {
 
 
 }
-function logout(event) {
-    event.preventDefault();
+function logout() {
+ 
     let logout_url = "?controller=Usuario&action=logout";
 
     const request = new Request(base_url + logout_url, {
